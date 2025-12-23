@@ -109,8 +109,17 @@ The project requires the following Python libraries:
 <li>matplotlib, pandas, numpy</li>
 </ul>
 <h2>Installation</h2>
-<h3>You can install the necessary packages using pip:</h3>
-pip install torch torchaudio numpy pandas tqdm matplotlib faster-whisper resemblyzer scikit-learn torchcodec soundfile
+<h3>The project is optimized for Google Colab but can be run locally with a GPU.</h3>
+<h3>Dependencies</h3>
+```bash
+pip install torch torchaudio numpy pandas tqdm matplotlib faster-whisper resemblyzer scikit-learn soundfile
+```
+<h3>Usage Instructions</h3>
+<ol>
+<li>Run Team13_final.ipynb: This will auto-download the LibriSpeech dataset, and train the model. After training, you can provide a mixed audio file to generate the separated tracks and transcript.</li>
+
+<li>Run result_analysis.ipynb: Use this to compare your predicted audio against ground truth signals. It will generate a report showing the SI-SDR Improvement (Δ) achieved by the Wiener Filter.</li>
+</ol>
 
 <h2>How to Use</h2>
 <ol>
